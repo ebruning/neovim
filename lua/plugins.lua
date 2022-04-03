@@ -10,6 +10,8 @@ return require('packer').startup(function()
   use 'nvim-lua/popup.nvim'     -- Notifications
   use 'rcarriga/nvim-notify'    -- Notifications
 
+  use "akinsho/toggleterm.nvim" 
+
   use {
     'nvim-lualine/lualine.nvim',
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
