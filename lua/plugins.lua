@@ -6,9 +6,14 @@ return require('packer').startup(function()
   use 'wbthomason/packer.nvim'
   use 'sainnhe/gruvbox-material'
 
-  use 'nvim-lua/plenary.nvim'
-  use 'nvim-lua/popup.nvim'
-  use 'rcarriga/nvim-notify'
+  use 'nvim-lua/plenary.nvim'   -- Notifications
+  use 'nvim-lua/popup.nvim'     -- Notifications
+  use 'rcarriga/nvim-notify'    -- Notifications
+
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+  }
 
   use {
     'kyazdani42/nvim-tree.lua',
@@ -16,5 +21,7 @@ return require('packer').startup(function()
       'kyazdani42/nvim-web-devicons', -- optional, for file icon
     },
     config = function() require'nvim-tree'.setup {} end
-}
+  }
+
+
 end)
