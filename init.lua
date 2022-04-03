@@ -44,6 +44,9 @@ require'telescope'.setup {
   },
 }
 
+-- languages
+require'lspconfig'.pyright.setup{}
+
 -- key bindings
 vim.api.nvim_set_keymap('n', '<Leader>n', ':NvimTreeToggle<CR>', { noremap = true, silent = true })
 

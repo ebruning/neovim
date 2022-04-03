@@ -1,16 +1,17 @@
 -- Only required if you have packer configured as `opt`
 vim.cmd [[packadd packer.nvim]]
-
+local use = require('packer').use --remove warnings
 return require('packer').startup(function()
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
   use 'sainnhe/gruvbox-material'
+  use 'neovim/nvim-lspconfig'
 
   use 'nvim-lua/plenary.nvim'   -- Notifications
   use 'nvim-lua/popup.nvim'     -- Notifications
   use 'rcarriga/nvim-notify'    -- Notifications
 
-  use "akinsho/toggleterm.nvim" 
+  use "akinsho/toggleterm.nvim"
 
   use {
     'iamcco/markdown-preview.nvim',
