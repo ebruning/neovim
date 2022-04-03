@@ -13,6 +13,12 @@ return require('packer').startup(function()
   use "akinsho/toggleterm.nvim" 
 
   use {
+    'iamcco/markdown-preview.nvim',
+    run = 'cd app && yarn install',
+    cmd = 'MarkdownPreview'
+  }
+
+  use {
     'nvim-lualine/lualine.nvim',
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   }
@@ -38,5 +44,17 @@ return require('packer').startup(function()
   use {
     'nvim-treesitter/nvim-treesitter',
     run = ':TSUpdate'
+  }
+
+  use {
+    'renerocksai/telekasten.nvim',
+    requires = {
+      {
+        'renerocksai/calendar-vim',
+        'nvim-telescope/telescope-symbols.nvim',
+        'mzlogin/vim-markdown-toc',
+        'nvim-telescope/telescope-media-files.nvim'
+      }
+    }
   }
 end)
