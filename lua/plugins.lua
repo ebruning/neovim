@@ -23,5 +23,8 @@ return require('packer').startup(function()
     config = function() require'nvim-tree'.setup {} end
   }
 
-
+  use {
+    'lewis6991/gitsigns.nvim',
+    -- tag = 'release' -- To use the latest release
+  }
 end)

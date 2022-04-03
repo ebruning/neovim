@@ -29,6 +29,7 @@ require('plugins') --packer config
 require('nvimtree-config')
 require('notify-config')
 require('lualine-config')
+require('gitsigns-config')
 
 -- key bindings
 vim.api.nvim_set_keymap('n', '<Leader>n', ':NvimTreeToggle<CR>', { noremap = true, silent = true })
