@@ -32,4 +32,3 @@ require('notify-config')
 -- key bindings
 vim.api.nvim_set_keymap('n', '<Leader>n', ':NvimTreeToggle<CR>', { noremap = true, silent = true })
 
-require("notify")("My super important message")
