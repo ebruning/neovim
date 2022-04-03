@@ -6,6 +6,10 @@ return require('packer').startup(function()
   use 'wbthomason/packer.nvim'
   use 'sainnhe/gruvbox-material'
 
+  use 'nvim-lua/plenary.nvim'
+  use 'nvim-lua/popup.nvim'
+  use 'rcarriga/nvim-notify'
+
   use {
     'kyazdani42/nvim-tree.lua',
     requires = {
