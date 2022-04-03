@@ -29,4 +29,14 @@ return require('packer').startup(function()
     'lewis6991/gitsigns.nvim',
     -- tag = 'release' -- To use the latest release
   }
+
+  use {
+    'nvim-telescope/telescope.nvim',
+    requires = { {'nvim-lua/plenary.nvim'} }
+  }
+
+  use {
+    'nvim-treesitter/nvim-treesitter',
+    run = ':TSUpdate'
+  }
 end)
